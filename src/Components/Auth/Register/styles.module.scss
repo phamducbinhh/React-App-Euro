@@ -1,0 +1,274 @@
+.Authentication_wrapper_container_group {
+  width: 100%;
+  &_form {
+    display: flex;
+    padding: 16px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    &_controller {
+      display: flex;
+      padding: 0px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      align-self: stretch;
+      & > label {
+        color: #171717;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+      }
+
+      &_input {
+        width: 100%;
+        & > input {
+          display: flex;
+          height: 40px;
+          width: 100%;
+          padding: 12px 16px;
+          align-items: center;
+          gap: 10px;
+          align-self: stretch;
+          border-radius: 6px;
+          border: 1px solid #d4d4d4;
+          background: #fafafa;
+          font-size: 14px;
+        }
+        & > input::placeholder {
+          color: #737373;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+        }
+        &.error > input {
+          background-color: #fdf2f2;
+          border: 1px solid #f05252;
+          color: #f05252 !important;
+        }
+        &.error > input::placeholder {
+          color: #f05252 !important;
+        }
+        &.success > input {
+          background-color: #f3faf7;
+          border: 1px solid #0e9f6e;
+          color: #0e9f6e !important;
+        }
+        &.success > input::placeholder {
+          color: #0e9f6e !important;
+        }
+      }
+
+      &_errors {
+        color: #f05252;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        margin-top: 8px;
+      }
+    }
+
+    &_row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+      &_controller {
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        width: 100%;
+        & > label {
+          color: #171717;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+        }
+
+        &_input {
+          width: 100%;
+          & > input {
+            display: flex;
+            height: 40px;
+            width: 100%;
+            padding: 12px 16px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 6px;
+            border: 1px solid #d4d4d4;
+            background: #fafafa;
+          }
+          & > input::placeholder {
+            color: #737373;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+        }
+
+        &_dropdown {
+          display: flex;
+          height: 40px;
+          padding: 12px 16px;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          border-radius: 6px;
+          border: 1px solid #d4d4d4;
+          background: #fafafa;
+          width: 100%;
+          cursor: pointer;
+          position: relative;
+
+          &_name {
+            color: #737373;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          &_list {
+            position: absolute;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #d4d4d4;
+            background: #fafafa;
+            padding: 8px;
+            margin-top: 4px;
+            z-index: 10;
+            top: 48px;
+            left: 0;
+            /* Shadow/shadow-lg */
+            box-shadow:
+              0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0px 4px 6px 0px rgba(0, 0, 0, 0.05);
+
+            & > li {
+              cursor: pointer;
+              display: flex;
+              padding: 12px;
+              align-items: center;
+              gap: 8px;
+              align-self: stretch;
+              transition: all 0.4s ease;
+              border-radius: 8px;
+              &:hover {
+                background-color: #e5e5e5;
+                & > span {
+                  color: #171717;
+                }
+              }
+
+              & > span {
+                color: #737373;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                transition: all 0.4s ease;
+                line-height: 130%; /* 20.8px */
+              }
+            }
+          }
+
+          &.error {
+            background-color: #fdf2f2;
+            border: 1px solid #f05252;
+            color: #f05252 !important;
+            font-size: 14px !important;
+          }
+          &.success {
+            background-color: #f3faf7;
+            border: 1px solid #0e9f6e;
+            color: #0e9f6e !important;
+            font-size: 14px !important;
+          }
+        }
+        &_errors {
+          color: #f05252;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+        }
+      }
+    }
+
+    &_heplers {
+      color: #737373;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      & > span {
+        color: #1c64f2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Authentication_wrapper_container_action {
+  width: 100%;
+  display: flex;
+  padding: var(--0, 0px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  &_btn {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: var(--4, 16px) var(--5, 20px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--15, 6px);
+    align-self: stretch;
+    border-radius: var(--rounded-lg, 8px);
+    background: var(--blue-600, #1c64f2);
+
+    & > span {
+      color: var(--white, #fff);
+      /* text-base/font-semibold */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 20.8px */
+    }
+  }
+  &_desc {
+    color: #737373;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    & > span {
+      color: #1c64f2;
+      cursor: pointer;
+    }
+  }
+}
+
+.Authentication_wrapper_container_form {
+  width: 100%;
+}

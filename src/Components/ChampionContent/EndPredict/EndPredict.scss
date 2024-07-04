@@ -1,0 +1,58 @@
+.home__container_content_your_champion_inner_end_predicted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--15, 6px);
+  align-self: stretch;
+  margin-top: 30px;
+  @media (max-width: 1150px) {
+    margin-top: 15px;
+  }
+  &_thanks {
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    text-transform: uppercase;
+    &_block {
+      @media (max-width: 1150px) {
+        display: block;
+      }
+    }
+    @media (max-width: 1150px) {
+      color: #222;
+      text-align: center;
+
+      /* text-lg/font-bold */
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 23.4px */
+    }
+  }
+  &_congras {
+    color: #313131;
+    text-align: center;
+
+    /* text-base/font-normal */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    @media (max-width: 1150px) {
+      color: #313131;
+      text-align: center;
+      /* text-sm/font-normal */
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 18.2px */
+    }
+  }
+}

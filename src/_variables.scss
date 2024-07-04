@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-BlackWide.otf');
+  font-weight: 900; /* Black */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-BoldWide.otf');
+  font-weight: 700; /* Bold */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-ExtraLightWide.otf');
+  font-weight: 200; /* Extra Light */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-LightWide.otf');
+  font-weight: 300; /* Light */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-SemiboldWide.otf');
+  font-weight: 600; /* Semibold */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-ThinWide.otf');
+  font-weight: 100; /* Thin */
+}
+@font-face {
+  font-family: iCielNeuePlak;
+  src: url('/iCielNeuePlak-Wide.otf');
+  font-weight: 400; /* Regular */
+}
+
+$font-family: 'Inter', sans-serif;
+$font-family-second: 'IBM Plex Sans', sans-serif;
+$color-primary: #1c64f2;
+$color-primary-light: #3f83f8;
+$color-primary-dark: #1a56db;
+$color-author-news: #233876;
+$color-dark: #262626;
+$color-darkest: #171717;
+$color-darker: #404040;
+$color-darker-gray: #525252;
+$color-purple: #9061f9;
+$border-left-header: #ffffff33;
+$color-gray: #a3a3a3;
+$color-gray-light: #737373;
+$color-gray-lighter: #c4c4c4;
+$color-light-white: #f5f5f5;
+$color-light-border: #d4d4d4;
+$color-white: #ffffff;
+$badge-border: #e1effe;
+$badge-bg: #ebf5ff;
+$color-white-blur: #fafafa;
+$color-white-gray: #e5e5e5;
+$color-black: #000;
+$color-black-base: #111;
+$color-header: #131313;
+$color-header-mobile: #1b1b1b;
+$color-border-bottom: #ffffff1a;
+$color-border-button: #771d1d;
+$color-logout-button: #f05252;
+$color-border-linear: linear-gradient(90deg, #1c64f2 0%, rgba(229, 229, 229, 0) 100%);
+$fontSize-min: 10px;
+$fontSize-minXs: 11px;
+$fontSize-xs: 12px;
+$fontSize-2xs: 13px;
+$fontSize-sm: 14px;
+$fontSize-normal: 15px;
+$fontSize-base: 16px;
+$fontSize-lg: 18px;
+$fontSize-xl: 20px;
+$fontSize-2xl: 24px;
+$fontSize-2xxl: 26px;
+$fontSize-3xl: 30px;
+$fontSize-4xl: 36px;
+$fontSize-4xxl: 40px;
+$fontSize-5xl: 48px;
+$fontSize-6xl: 60px;
+// Header height
+$headerTopHeight: 52px;
+$headerHeight: 70px;
+$headerUnderMobile: 40px;
+/* Media queries */
+$media-query-sm: 576px;
+$media-query-base: 600px;
+$media-query-md: 768px;
+$media-query-dm: 923px;
+$media-query-lg: 1023px;
+$media-query-cs: 1150px;
+$media-query-xl: 1280px;
+$media-query-xxl: 1300px;
+/* font-weigt */
+$font-xs: 300;
+$font-sm: 400;
+$font-base: 450;
+$font-md: 500;
+$font-lg: 600;
+$font-xl: 700;
+$font-2xl: 800;
+$font-3xl: 900;

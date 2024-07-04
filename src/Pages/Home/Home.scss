@@ -1,0 +1,101 @@
+@import './../../variables';
+.home {
+  background-color: #0039be;
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 900px) {
+      padding-top: 0px;
+      overflow: hidden;
+    }
+    &_content {
+      &_board {
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        @media (max-width: 900px) {
+          flex-direction: column;
+          gap: 50px;
+          padding: 0 20px;
+        }
+        &_left {
+          flex: 1;
+          width: 100%;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
+        }
+        &_right {
+          max-width: 395px;
+          width: 395px;
+          @media (max-width: 900px) {
+            width: 100%;
+            max-width: unset;
+          }
+        }
+      }
+      &_news {
+        padding-bottom: 50%;
+        position: relative;
+        z-index: 1;
+        @media (min-width: 1023px) and (max-width: 1500px) {
+          padding-bottom: 40%;
+        }
+        @media (max-width: 900px) {
+          padding: 0 20px;
+          padding-bottom: 35%;
+        }
+      }
+    }
+  }
+  &_vector {
+    position: absolute;
+    bottom: 0;
+    &_wrapper {
+      position: relative;
+      &_pc {
+        display: block;
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+      &_mobile {
+        display: none;
+        @media (max-width: 900px) {
+          display: block;
+        }
+      }
+      &_backtotop {
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        @media (min-width: 1023px) and (max-width: 1500px) {
+          top: 40%;
+        }
+        @media (max-width: 900px) {
+          top: 23%;
+        }
+      }
+    }
+  }
+  &_bg_sticky_img {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image: url('/image/bg_euro.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

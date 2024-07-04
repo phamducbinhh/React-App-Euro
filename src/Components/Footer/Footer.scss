@@ -1,0 +1,203 @@
+@import '../../variables';
+.footer_wrapper {
+  width: 100%;
+  background-color: $color-black;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  position: relative;
+
+  &_inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width: $media-query-md) {
+      padding: 0 20px;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    @media (min-width: $media-query-md) and (max-width: $media-query-lg) {
+      padding: 0 20px;
+    }
+    @media (max-width: $media-query-xl) {
+      padding: 0 20px;
+    }
+
+    &_logo_wrapper {
+      width: 30%;
+      margin-top: 30px;
+      &_logo {
+        max-width: 96px;
+        max-height: 96px;
+        & > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & > div {
+        min-width: 90px;
+      }
+      @media (max-width: $media-query-md) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      & > a,
+      & > span {
+        font-size: $fontSize-base;
+        color: $color-gray;
+        font-weight: $font-sm;
+        margin-top: 20px;
+        display: block;
+        max-width: 210px;
+        line-height: 20px;
+        @media (max-width: $media-query-md) {
+          margin-top: 0px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &_links {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: $media-query-md) {
+        flex-direction: column;
+      }
+
+      &_full {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        margin-top: 40px;
+        @media (max-width: $media-query-md) {
+          margin-top: 24px;
+        }
+        &_pc {
+          display: flex;
+          @media (max-width: $media-query-md) {
+            display: none;
+          }
+        }
+        &_mobile {
+          display: none;
+          @media (max-width: $media-query-md) {
+            display: flex;
+          }
+        }
+        & > h4 {
+          color: $color-white;
+          font-size: $fontSize-base;
+          font-weight: $font-sm;
+          font-family: $font-family-second;
+          font-style: normal;
+          line-height: 110%; /* 17.6px */
+        }
+        & > a,
+        & > span {
+          font-size: $fontSize-base;
+          color: $color-gray;
+          font-weight: $font-sm;
+          cursor: pointer;
+          line-height: 20px;
+          transition: all 0.4s ease;
+          &:hover {
+            color: #fafafa;
+          }
+        }
+        & > a {
+          & > span {
+            font-size: $fontSize-base;
+            color: $color-gray;
+            font-weight: $font-sm;
+            cursor: pointer;
+            line-height: 20px;
+            transition: all 0.4s ease;
+            &:hover {
+              color: #fafafa;
+            }
+          }
+        }
+        &_disabled {
+          color: #403f3f !important;
+          cursor: default !important;
+        }
+      }
+      &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 33.333%;
+        margin-top: 40px;
+
+        &_translate {
+          transform: translateY(-85px);
+          @media (max-width: $media-query-md) {
+            transform: translateY(0);
+          }
+        }
+        @media (max-width: $media-query-md) {
+          width: 100%;
+        }
+        &_disabled {
+          opacity: 0.5;
+          cursor: default !important;
+          &:hover {
+            color: #a3a3a3 !important;
+          }
+        }
+        & > h4 {
+          color: $color-white;
+          font-size: $fontSize-base;
+          font-weight: $font-sm;
+          font-family: $font-family-second;
+          font-style: normal;
+          line-height: 110%; /* 17.6px */
+        }
+        & > a,
+        & > span {
+          font-size: $fontSize-base;
+          color: $color-gray;
+          font-weight: $font-sm;
+          cursor: pointer;
+          line-height: 20px;
+          transition: all 0.4s ease;
+          &:hover {
+            color: #fafafa;
+          }
+        }
+
+        &_logo {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+
+          & > div {
+            min-width: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hide_in_mobile {
+  @media screen and (max-width: $media-query-md) {
+    display: none;
+  }
+}
+
+.footer_wrapper_inner_links_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  @media (max-width: $media-query-md) {
+    gap: 0;
+  }
+}

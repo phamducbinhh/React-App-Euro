@@ -1,0 +1,39 @@
+@import '../../variables';
+.back_to_top {
+  display: flex;
+  width: 100%;
+  height: 13px;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  flex-shrink: 0;
+  max-width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+  &_logo {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    @media (max-width: 900px) {
+      width: 12px;
+      height: 12px;
+    }
+    & > svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_text {
+    color: #7197ef;
+    font-family: $font-family;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
+    text-align: center;
+    @media (max-width: 900px) {
+      font-size: 13px;
+    }
+  }
+}

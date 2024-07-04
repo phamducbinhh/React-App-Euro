@@ -1,0 +1,58 @@
+.loading-box {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999999;
+  overflow: hidden;
+  background: #0039be;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Thêm transition cho opacity */
+  opacity: 1;
+}
+.loading-box-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.loading-box-content-logo {
+  width: 250px;
+  margin-bottom: 30px;
+}
+.loading-box-content-progress {
+  position: relative;
+  width: 344px;
+  max-width: 80%;
+  height: 3px;
+  background: #d9d9d9;
+  margin-bottom: 30px;
+}
+.loading-box-content-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: block;
+  background: #ffa827;
+  transition: width 0.3s ease;
+}
+.loading-box-content-count {
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 24.2px */
+}

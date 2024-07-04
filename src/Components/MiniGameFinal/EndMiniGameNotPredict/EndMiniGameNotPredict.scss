@@ -1,0 +1,88 @@
+.minigame_final_minigame_content_success {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.minigame_final_minigame_success {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  gap: 8px;
+  @media (max-width: 900px) {
+    margin-top: 10px;
+    padding: 0 20px;
+    gap: 6px;
+  }
+  &_title {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 26px */
+    align-self: stretch;
+    @media (max-width: 900px) {
+      font-size: 18px;
+    }
+  }
+  &_des {
+    color: #004a25;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    max-width: 420px;
+
+    @media (max-width: 900px) {
+      font-size: 14px;
+    }
+  }
+}
+.minigame_final_minigame-content-team {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  justify-content: center;
+  &-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 9999px;
+    border: 3px solid #fff;
+    background: #fff;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    @media (max-width: 900px) {
+      width: 72px;
+      height: 72px;
+      border: 3px solid #fff;
+    }
+    & > img {
+      width: 100%;
+      display: block;
+    }
+    &-vs {
+      color: #fff;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 32px */
+      @media (max-width: 900px) {
+        color: #fff;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 20px */
+      }
+    }
+  }
+}
