@@ -66,7 +66,7 @@ const Layout: React.FC<any> = ({ children }) => {
     await loadSDK('https://accounts.google.com/gsi/client')
     const client = google.accounts.oauth2.initTokenClient({
       client_id:
-        API_CONFIGS.private_key_google || '808773951279-3i57ebs4rfkaq0b9np4kqdpsh30pd7ni.apps.googleusercontent.com',
+        API_CONFIGS.private_key_google,
       scope: 'email profile openid',
       ux_mode: 'popup',
       include_granted_scopes: true,

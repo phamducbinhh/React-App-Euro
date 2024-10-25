@@ -114,8 +114,8 @@ const App: React.FC = () => {
         <Confetti
           width={width}
           height={height}
-          numberOfPieces={80} // Tăng số lượng mảnh confetti
-          gravity={0.05} // Giảm trọng lực để confetti rơi chậm hơn
+          numberOfPieces={80}
+          gravity={0.05}
           colors={['#22b4a1', '#ff6262', '#faa534', '#f7fac5']}
           recycle={false}
           initialVelocityY={{ min: 0, max: 10 }}
