@@ -88,7 +88,7 @@ const App: React.FC = () => {
       return new Promise<void>((resolve) => {
         window.fbAsyncInit = function () {
           FB.init({
-            appId: API_CONFIGS.private_key_facebook ?? '243753201717859',
+            appId: API_CONFIGS.private_key_facebook,
             status: false,
             cookie: false,
             xfbml: true,
